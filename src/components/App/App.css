@@ -1,0 +1,18 @@
+body{
+  margin: 0;
+  background: linear-gradient(rgb(118,196,94), rgb(86, 143, 68));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
