@@ -1,0 +1,15 @@
+.regHeader{
+    color: rgb(105, 104, 104);
+    margin-top: -20px;
+}
+
+.logLink{
+    font-size: 13.5pt;
+    color: rgb(92, 158, 72);
+    margin-left: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.logLink:hover{
+    text-decoration: underline;
+}

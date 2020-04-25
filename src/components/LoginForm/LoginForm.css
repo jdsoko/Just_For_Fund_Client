@@ -1,0 +1,70 @@
+.loginForm{
+    padding-top: 2px;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    -webkit-box-shadow:2px 2px 5px gray;
+    -moz-box-shadow:2px 2px 5px gray;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.loginInput{
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-size: 13pt;
+    border: none;
+    width: 70%;
+    background-color: rgb(226, 226, 226);
+    color: rgb(98, 98, 98);
+    margin-bottom: 35px;
+    padding: 10px;
+    padding-left: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginButton{
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(241, 241, 241);
+    width: 70%;
+    background-color: rgb(99, 170, 78);
+    border: none;
+    font-size: 13pt;
+    letter-spacing: 1px;
+}
+.loginButton:hover{
+    background-color: rgb(79, 136, 62);
+    cursor: pointer;
+}
+
+.register{
+    padding-top: 20px;
+    color: rgb(105, 104, 104);
+    font-size: 13pt;
+    
+}
+
+.regLink{
+    
+    color: rgb(92, 158, 72);
+    margin-left: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.regLink:hover{
+    text-decoration: underline;
+}
+
+.loginField{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border: none;
+}

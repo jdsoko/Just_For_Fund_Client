@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import './LoginForm.css'
+import './RegistrationForm.css';
 import { Link } from 'react-router-dom'
 
 
-export default class LoginForm extends Component{
+export default class RegistrationForm extends Component{
     handleSubmit = ev => {
         ev.preventDefault()
     }
-
 
     render(){
         return(
@@ -15,8 +14,16 @@ export default class LoginForm extends Component{
                 className="loginForm"
                 onSubmit={this.handleSubmit}
             >
+    
             <fieldset className="loginField">
-            <h2 className="regHeader">Log-In</h2>
+            <h2 className="regHeader">Register for Account</h2>
+            <input 
+                className="loginInput"
+                type="text"
+                name="full_name"
+                placeholder="Full Name"
+                required
+            />
             <input 
                 className="loginInput"
                 type="text" 
@@ -32,18 +39,16 @@ export default class LoginForm extends Component{
                 required
             />
             <button className="loginButton" type="submit">
-                Log-In
+                Register
             </button>
             <p className="register">
-                Not registered?
-                <Link className="regLink" to='/registration'>
-                    Create account
+                
+                <Link className="logLink" to='/'>
+                    Back to Log-In
                 </Link>
-
             </p>
             </fieldset>
-            </form>
+        </form>
         )
     }
-
 }
