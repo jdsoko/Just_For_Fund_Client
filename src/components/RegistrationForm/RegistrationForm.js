@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './RegistrationForm.css';
 import { Link } from 'react-router-dom'
+import history from '../../history'
 
 
 export default class RegistrationForm extends Component{
     handleSubmit = ev => {
         ev.preventDefault()
+        history.push('/')
     }
 
     render(){
@@ -39,7 +41,7 @@ export default class RegistrationForm extends Component{
                 required
             />
             <button className="loginButton" type="submit">
-                Register
+                Submit
             </button>
             <p className="register">
                 

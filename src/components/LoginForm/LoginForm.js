@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import './LoginForm.css'
 import { Link } from 'react-router-dom'
-
+import { Redirect } from 'react-router-dom'
 
 export default class LoginForm extends Component{
+   state={
+       redirect: false
+   }
     handleSubmit = ev => {
         ev.preventDefault()
+        this.setState({redirect: true})
     }
 
-
     render(){
+        if (this.state.redirect){
+            return <Redirect to='/budgets' />
+        }
         return(
             <form 
                 className="loginForm"
@@ -32,7 +38,7 @@ export default class LoginForm extends Component{
                 required
             />
             <button className="loginButton" type="submit">
-                Log-In
+                Submit
             </button>
             <p className="register">
                 Not registered?

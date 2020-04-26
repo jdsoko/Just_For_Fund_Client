@@ -1,0 +1,82 @@
+.budget{
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    -webkit-box-shadow:2px 2px 5px gray;
+    -moz-box-shadow:2px 2px 5px gray;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: center;
+}
+
+.budgetName{
+    color: rgb(105, 104, 104);
+    padding-top: 15px;
+}
+
+
+.add{
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-size: 11pt;
+    border: none;
+    width: 300px;
+    background-color: rgb(226, 226, 226);
+    
+    padding: 7px;
+    padding-left: 8px;
+}
+
+#addLabel{
+    font-size: 12pt;
+    padding-right: 8px;
+    color: rgb(99, 170, 78);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.addUser{
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 7px;
+    color: rgb(241, 241, 241);
+    background-color: rgb(99, 170, 78);
+    border: none;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    margin-left:-46px;
+}
+.addUser:hover{
+    background-color: rgb(79, 136, 62);
+    cursor: pointer;
+}
+
+.purchaseButton{
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 8px;
+    color: rgb(241, 241, 241);
+    background-color: rgb(99, 170, 78);
+    border: none;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    width: 50%;
+    margin-bottom: 15px;
+}
+.purchaseButton:hover{
+    cursor: pointer;
+    background-color: rgb(79, 136, 62);
+}
+
+.budgetLimit{
+    font-size: 16pt;
+    color: rgb(105, 104, 104);
+}
+
+.amountLeft{
+    font-size: 15pt;
+    color: rgb(105, 104, 104);
+}
