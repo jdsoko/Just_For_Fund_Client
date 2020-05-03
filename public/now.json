@@ -1,0 +1,9 @@
+{
+    "version": 2,
+   "alias": "just-for-fund",
+    "name": "just-for-fund",
+    "routes": [
+        { "handle": "filesystem" },
+        { "src": "/.*", "dest": "/index.html" }
+    ]
+  }

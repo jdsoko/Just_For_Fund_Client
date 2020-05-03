@@ -9,3 +9,9 @@
     width: 600px;
     text-align: center;
 }
+
+.noPurchase{
+    color: rgb(105,104,104);
+    padding-top: 30px;
+    height: 140px;
+}

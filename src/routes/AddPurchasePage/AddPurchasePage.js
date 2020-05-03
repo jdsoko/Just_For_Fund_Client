@@ -6,7 +6,9 @@ export default class AddPurchasePage extends Component{
     render(){
         return(
             <div>
-                <PurchaseForm />
+                <PurchaseForm 
+                    budget_id={this.props.location.state.budget_id}
+                />
             </div>
         )
     }

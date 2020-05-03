@@ -2,20 +2,43 @@ import React, { Component } from 'react';
 import './LoginForm.css'
 import { Link } from 'react-router-dom'
 import { Redirect } from 'react-router-dom'
+import AuthApiService from '../../services/auth-api-service';
+import TokenService from '../../services/token-service';
+
 
 export default class LoginForm extends Component{
    state={
-       redirect: false
+       redirect: false,
+       error: null,
+       user_name: '',
+       password: ''
    }
     handleSubmit = ev => {
         ev.preventDefault()
-        this.setState({redirect: true})
+        this.setState({ error: null })
+
+        AuthApiService.postLogin({
+            user_name: this.state.user_name,
+            password: this.state.password,
+        })
+        .then(res => {
+            
+            
+            TokenService.saveAuthToken(res.authToken)
+            this.setState({ redirect: true })
+        })
+        .catch(res => {
+            this.setState({ error: res.error })
+        })
+
     }
 
     render(){
-        if (this.state.redirect){
-            return <Redirect to='/budgets' />
-        }
+        const { error } = this.state
+        if(this.state.redirect === true)
+            return(
+            <Redirect to={{pathname: '/budgets', state: {user_name: this.state.user_name}}} />
+            )
         return(
             <form 
                 className="loginForm"
@@ -29,6 +52,7 @@ export default class LoginForm extends Component{
                 name="user_name"
                 placeholder="Username"
                 required
+                onChange={e => this.setState({ user_name: e.target.value })}
             />
             <input
                 type="password"
@@ -36,13 +60,14 @@ export default class LoginForm extends Component{
                 name="password"
                 placeholder="Password"
                 required
+                onChange={e => this.setState({ password: e.target.value })}
             />
             <button className="loginButton" type="submit">
                 Submit
             </button>
             <p className="register">
                 Not registered?
-                <Link className="regLink" to='/registration'>
+                <Link className="regLink" to={{pathname: '/registration'}}>
                     Create account
                 </Link>
 

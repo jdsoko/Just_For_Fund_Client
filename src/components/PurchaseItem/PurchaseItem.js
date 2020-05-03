@@ -10,6 +10,7 @@ export default class PurhcaseItem extends Component {
                 <h4>Date: {this.props.date}</h4>
                 <p>Amount: ${this.props.amount}</p>
                 <p>Category: {this.props.category}</p>
+                <p>Made By: {this.props.name}</p>
             </div>
         )
     }

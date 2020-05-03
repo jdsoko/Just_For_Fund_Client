@@ -7,6 +7,7 @@ import BudgetListPage from '../../routes/BudgetListPage/BudgetListPage';
 import PurchaseListPage from '../../routes/PurchaseListPage/PurchaseListPage'
 import AddPurchasePage from '../../routes/AddPurchasePage/AddPurchasePage';
 import AddBudgetPage from '../../routes/AddBudgetPage/AddBudgetPage'
+import PrivateRoute from '../../routes/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -22,22 +23,22 @@ function App() {
           path={'/registration'}
           component={RegistrationPage}
         />
-        <Route 
+        <PrivateRoute 
           exact
           path={'/budgets'}
           component={BudgetListPage}
         />
-        <Route 
+        <PrivateRoute 
           exact
           path={'/purchases'}
           component={PurchaseListPage}
         />
-        <Route 
+        <PrivateRoute 
           exact
           path={'/purchases/add'}
           component={AddPurchasePage}
         />
-        <Route 
+        <PrivateRoute 
           exact
           path={'/budgets/add'}
           component={AddBudgetPage}

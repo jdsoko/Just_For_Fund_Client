@@ -6,7 +6,9 @@ export default class AddBudgetPage extends Component{
     render(){
         return(
             <div>
-                <BudgetForm />
+                <BudgetForm
+                    user_name={this.props.location.state.user_name}
+                />
             </div>
         )
     }
