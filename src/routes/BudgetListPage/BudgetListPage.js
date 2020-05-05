@@ -8,6 +8,7 @@ import config from '../../config'
 
 export default class BudgetListPage extends Component{
     state = {
+    
         budgets: [],
         purchases: [],
         error: null,
@@ -21,7 +22,7 @@ export default class BudgetListPage extends Component{
 
     
     fetchBudgets(){
-        fetch(`${config.API_BASE_URL}/budgets/user/1`, {
+        fetch(`${config.API_BASE_URL}/budgets/user/`, {
             headers: {
                 'authorization': `bearer ${TokenService.getAuthToken()}`
             }

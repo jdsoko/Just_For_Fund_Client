@@ -8,6 +8,11 @@ import PurchaseListPage from '../../routes/PurchaseListPage/PurchaseListPage'
 import AddPurchasePage from '../../routes/AddPurchasePage/AddPurchasePage';
 import AddBudgetPage from '../../routes/AddBudgetPage/AddBudgetPage'
 import PrivateRoute from '../../routes/PrivateRoute/PrivateRoute';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTrashAlt, faTrash, faTrashRestoreAlt } from '@fortawesome/free-solid-svg-icons'
+
+
+library.add(faTrashAlt, faTrash, faTrashRestoreAlt)
 
 function App() {
   return (

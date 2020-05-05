@@ -48,8 +48,10 @@ export default class PurchaseListPage extends Component{
     }
     
     renderCategories(purchases){
-        return purchases.map(purchase =>
-                <option value={purchase.category}>{purchase.category}</option>
+        const distinctCategories = [...new Set(purchases.map(purchase => purchase.category))]
+        
+        return distinctCategories.map(category =>
+                <option value={category}>{category}</option>
             )
     }
     

@@ -12,7 +12,31 @@
 
 .budgetName{
     color: rgb(105, 104, 104);
-    padding-top: 15px;
+    margin-top: -10px;
+}
+
+.deleteButton{
+    margin-top: 13px;
+    margin-left: 520px;
+    margin-bottom: 00px;
+    background-color: rgb(212, 212, 212);
+    border: none;
+    border-radius: 3px;
+    color: gray;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16pt;
+}
+.deleteButton:hover{
+    cursor: pointer;
+    background-color: rgb(99, 170, 78);
+    color: rgb(241, 241, 241);
+}
+
+.overAlert{
+    font-weight: bold;
+    color: rgb(155, 12, 12)
 }
 
 
@@ -80,3 +104,22 @@
     font-size: 15pt;
     color: rgb(105, 104, 104);
 }
+
+/* .deleteButton{
+    margin-top: 10px;
+    margin-left: 520px;
+    margin-bottom: 00px;
+    background-color: rgb(195, 194, 194);
+    border: none;
+    border-radius: 3px;
+    color: gray;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16pt;
+}
+.deleteButton:hover{
+    cursor: pointer;
+    background-color: rgb(99, 170, 78);
+    color: rgb(241, 241, 241);
+}*/
