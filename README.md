@@ -28,7 +28,7 @@ Builds the app for production to the build folder.
 ## Screenshots:
 
 ### Landing Screen/Log-in Page
-![Screen shot of login page](https://i.ibb.co/YLmPJRw/unnamed.png)
+![Screen shot of login page](https://i.ibb.co/nmHjHb3/just-for-fund-screenshot-3.png)
 
 ### Game List Page
 ![Screen shot of budget list page](https://i.ibb.co/HYC56W8/just-for-fund-screenshot-2.png)
