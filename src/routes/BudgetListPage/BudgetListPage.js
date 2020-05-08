@@ -22,7 +22,7 @@ export default class BudgetListPage extends Component{
 
     componentDidMount(){
         this.fetchBudgets()
-        
+        window.scrollTo(0, 0)
     }
 
     

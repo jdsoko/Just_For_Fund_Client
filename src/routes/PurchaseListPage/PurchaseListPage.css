@@ -15,7 +15,17 @@
     
 }
 
+#dropDown{
+    color: rgb(241, 241, 241);
+    margin-left: -40px;
+    padding-top: 4px;
+}
+#dropDown:hover{
+    cursor: pointer;
+}
+
 .select{
+    appearance: initial;
     -webkit-appearance: none;
     width: 160px;
     border: none;
@@ -28,6 +38,7 @@
     padding-left: 10px;
     letter-spacing: 1px;
     border-radius: 2px;
+    margin-left: -22px;
 }
 select:hover{
     background-color: rgb(79, 136, 62);
@@ -110,6 +121,10 @@ option{
     .select{
         font-size: 10pt;
         width: 105pt;
+        margin-left: -20px;
+    }
+    #dropDown{
+        padding-top: 7px;
     }
 }
 

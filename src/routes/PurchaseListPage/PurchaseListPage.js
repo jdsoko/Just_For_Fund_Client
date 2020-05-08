@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import config from '../../config'
 import TokenService from '../../services/token-service'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faPlusSquare } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faPlusSquare, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 export default class PurchaseListPage extends Component{
     state = {
@@ -19,6 +19,7 @@ export default class PurchaseListPage extends Component{
 
     componentDidMount(){
         this.fetchPurchases()
+        window.scrollTo(0, 0)
     }
 
     fetchPurchases(){
@@ -100,11 +101,13 @@ export default class PurchaseListPage extends Component{
 
                         <label htmlFor="category" className="purchaseLabel">Sort:</label> 
                 <div id="category">
+                   
                 <select className="select" onChange={this.handleChange}>
-                    <option value="none" selected hidden disabled>Categories</option>
+                    <option value="none" selected hidden disabled>Categories  </option>
                     <option value="all">All</option>
                     {this.renderCategories(this.state.purchases)}
                 </select>
+                <FontAwesomeIcon id="dropDown" icon={faCaretDown} /> 
                 </div>
                 </div>
                 <div className="pageError" role='alert'>
