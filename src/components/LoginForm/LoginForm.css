@@ -96,8 +96,15 @@
     }
 }
 
+@media only screen and (max-width: 500px){
+    .loginForm{
+        margin-top: 50px;
+    }
+}
+
 @media only screen and (max-width: 400px){
     .loginInput, .loginButton{
         width: 85%;
     }
+    
 }
