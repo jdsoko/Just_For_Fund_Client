@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { Redirect } from 'react-router-dom'
 import AuthApiService from '../../services/auth-api-service';
 import TokenService from '../../services/token-service';
+import Header from '../../components/Header/Header'
 
 
 export default class LoginForm extends Component{
@@ -45,7 +46,12 @@ export default class LoginForm extends Component{
                 onSubmit={this.handleSubmit}
             >
             <fieldset className="loginField">
-            <h2 className="regHeader">Log-In</h2>
+                
+            <Header  className="header"/>
+            <h2 className="logHeader">Log-In</h2>
+            <div role='alert'>
+                {error && <p className="error">{error}</p>}
+            </div>
             <input 
                 className="loginInput"
                 type="text" 

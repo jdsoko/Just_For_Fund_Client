@@ -7,10 +7,9 @@ export default class PurhcaseItem extends Component {
     render(){
         return(
             <div className="purchaseItem">
-                <h4>Date: {this.props.date}</h4>
-                <p>Amount: ${this.props.amount}</p>
-                <p>Category: {this.props.category}</p>
-                <p>Made By: {this.props.name}</p>
+                <p className="purchaseData"><span id="purchaseAmount">${this.props.amount}</span></p>
+                  <p className="purchaseData"><span id="purchaseCategory">{this.props.category}</span></p>
+                  <p className="purchaseData"><span id="purchaseDate">({this.props.date})</span><span id="purchaseUser">{this.props.name}</span></p>
             </div>
         )
     }

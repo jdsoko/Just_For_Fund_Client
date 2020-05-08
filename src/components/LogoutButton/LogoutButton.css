@@ -1,0 +1,42 @@
+.logoutButton{
+    position: absolute;
+    background-color: none;
+    right: 25px;
+    border: none;
+    background-color: white;
+    font-size: 14pt;
+    color: rgb(99, 170, 78);
+    text-decoration: underline;
+    font-weight: bold;
+    top: 10px;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 3px;
+    width: 80px;
+}
+.logoutButton:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px){
+    .logoutButton{
+        font-size: 12pt;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .logoutButton{
+        font-size: 10pt;
+        top: 5px;
+        right: 10px;
+        
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .logoutButton{
+        font-size: 9pt;
+        
+    }
+}

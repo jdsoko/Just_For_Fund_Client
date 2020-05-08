@@ -1,3 +1,5 @@
+
+
 .loginForm{
     padding-top: 2px;
     display: block;
@@ -11,6 +13,10 @@
     -moz-box-shadow:2px 2px 5px gray;
     border-radius: 2px;
     text-align: center;
+}
+
+.header{
+    margin-top: -40px;
 }
 
 .loginInput{
@@ -67,4 +73,31 @@
     padding-top: 60px;
     padding-bottom: 60px;
     border: none;
+}
+
+.logHeader{
+    color: rgb(105, 104, 104);
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 600px){
+    .loginForm{
+        width: 95%;
+    }
+    .loginInput, .loginButton{
+        width: 80%;
+        font-size: 11pt;
+    }
+    .logHeader{
+        font-size: 16pt;
+    }
+    .register{
+        font-size: 11pt;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .loginInput, .loginButton{
+        width: 85%;
+    }
 }

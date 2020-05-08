@@ -65,7 +65,7 @@ export default class BudgetItem extends Component{
                </p>
         }
         else{
-            return  <p className="amountLeft">Amount Left: ${remaining}</p>
+            return  <p className="amountLeft">Remaining: ${remaining}</p>
         }
     }
 
@@ -73,10 +73,6 @@ export default class BudgetItem extends Component{
         const { error } = this.state
         return(
             <div className="budget">
-                    <div>
-                        {error && <h2>{error}</h2>}
-                      
-                    </div>
                     
                     <button onClick={this.handleDelete} className="deleteButton"><FontAwesomeIcon icon="trash-alt"/></button>
         
@@ -86,6 +82,7 @@ export default class BudgetItem extends Component{
                         onSubmit={this.handleSubmit}
                     >
                     <label id="addLabel" htmlFor="add">Add user to budget:</label>
+                    
                     <input 
                         value={this.state.user_name}
                         required 
@@ -95,8 +92,11 @@ export default class BudgetItem extends Component{
                         onChange={e => this.setState({user_name: e.target.value})} 
                     />
                     <button type="submit" className="addUser">Add</button>
+                    <div role='alert'>
+                        {error && <p className="error">{error}</p>}
+                    </div>
                     </form>
-                    <h4 className="budgetLimit">Budget Limit: ${this.props.limit}</h4>
+                    <h4 className="budgetLimit">Limit: ${this.props.limit}</h4>
                     {this.handleRemaining()}
                     <Link to={{pathname: "/purchases", state: {budget_id: this.props.budget_id, budget_name: this.props.name}}}>
                         <button className="purchaseButton">See Purchases</button>

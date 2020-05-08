@@ -3,6 +3,7 @@ import './BudgetForm.css'
 import config from '../../config'
 import TokenService from '../../services/token-service'
 import history from '../../history'
+import { Link } from 'react-router-dom'
 
 export default class BudgetForm extends Component{
     state = {
@@ -71,16 +72,16 @@ export default class BudgetForm extends Component{
         return(
             <div>
                 
-                <div role='alert'>
-                {error && <p className="red">{error}</p>}
-                </div>
+                
                <form 
                 className="loginForm"
                 onSubmit={this.handleSubmit}
             >
             <fieldset className="loginField">
             <h2 className="regHeader">New Budget</h2>
-            
+            <div role='alert'>
+                {error && <p className="error">{error}</p>}
+            </div>
             <input
                 name="bugetLimit"
                 className="loginInput" 
@@ -101,8 +102,9 @@ export default class BudgetForm extends Component{
             <button className="loginButton" type="submit">
                 Submit
             </button>
-            
+            <Link id="budgetBack" className="regLink" to='/budgets'>Back to Budgets</Link>
             </fieldset>
+           
             </form> 
             </div>
         )

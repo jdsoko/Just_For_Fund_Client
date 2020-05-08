@@ -1,0 +1,42 @@
+.header-link{
+    text-decoration: none;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.dollar-bill{
+    font-size: 44pt;
+    margin-left: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    font-family: 'Rubik';
+    width: 300px;
+    font-size: 30pt;
+    color: rgb(107, 177, 86);
+    
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        font-size: 24pt;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    header{
+        font-size: 20pt;
+    }
+}

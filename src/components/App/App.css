@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Ubuntu:wght@500&display=swap');
+
 *{
   box-sizing: border-box;
 }
 
-body{
+body, html{
   margin: 0;
+  padding: 0;
   background: linear-gradient(rgb(118,196,94), rgb(86, 143, 68));
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +18,16 @@ body{
   background-attachment: fixed;
 }
 
+html, body, #root, .App, main{
+  height: 100%;
+}
 
+.error{
+  color: rgb(136, 13, 13);
+  font-weight: bolder;
+  font-size: 13pt;
+  padding: 5px;
+}
 
 @keyframes App-logo-spin {
   from {

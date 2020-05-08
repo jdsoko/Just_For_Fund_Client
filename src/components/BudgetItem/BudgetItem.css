@@ -13,12 +13,15 @@
 .budgetName{
     color: rgb(105, 104, 104);
     margin-top: -10px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .deleteButton{
-    margin-top: 13px;
-    margin-left: 520px;
-    margin-bottom: 00px;
+    margin-top: 14px;
+    
+    margin-left: 87%;
     background-color: rgb(212, 212, 212);
     border: none;
     border-radius: 3px;
@@ -96,30 +99,94 @@
 }
 
 .budgetLimit{
-    font-size: 16pt;
+    font-size: 18pt;
     color: rgb(105, 104, 104);
 }
 
 .amountLeft{
-    font-size: 15pt;
+    font-size: 17pt;
     color: rgb(105, 104, 104);
 }
 
-/* .deleteButton{
-    margin-top: 10px;
-    margin-left: 520px;
-    margin-bottom: 00px;
-    background-color: rgb(195, 194, 194);
-    border: none;
-    border-radius: 3px;
-    color: gray;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16pt;
+@media only screen and (max-width: 725px){
+    .budget{
+        width: 99%;
+    }
+    .budgetName{
+        font-size: 20pt;
+    }
+    .add{
+        width: 280px;
+        font-size: 10pt
+    }
+    .addUser{
+        font-size: 10pt;
+        margin-left: -42px;
+    }
+    .budgetLimit{
+        font-size: 16pt;
+    }
+    .amountLeft{
+        font-size: 16pt;
+        margin-top: -10px;
+    }
+    .deleteButton{
+        margin-left: 85%;
+    }
 }
-.deleteButton:hover{
-    cursor: pointer;
-    background-color: rgb(99, 170, 78);
-    color: rgb(241, 241, 241);
-}*/
+
+@media only screen and (max-width: 550px){
+    .budget{
+        width: 100%;
+        
+    }
+    .budgetLimit{
+        font-size: 14pt;
+    }
+    .amountLeft{
+        font-size: 14pt;
+    }
+    .deleteButton{
+        margin-left: 81%;
+    }
+    .budgetName{
+        font-size: 16pt;
+    }
+    .purchaseButton{
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .budgetName{
+        margin-top: -30px;
+    }
+    .add{
+        font-size: 8pt;
+    }
+    .addUser{
+        font-size: 8pt;
+        margin-left: -39px;
+    }
+    #addLabel{
+        font-size: 10pt;
+    }
+    .budgetLimit{
+        font-size: 14pt;
+        margin-top: 8px;
+    }
+    .amountLeft{
+        font-size: 14pt;
+        margin-top: -15px;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .budget{
+        
+    }
+    .deleteButton{
+        font-size: 14pt;
+    }
+}

@@ -44,7 +44,7 @@ export default class RegistrationForm extends Component{
             <fieldset className="loginField">
             <h2 className="regHeader">Register for Account</h2>
             <div role='alert'>
-                {error && <h3>{error}</h3>}
+                {error && <p className="error">{error}</p>}
             </div>
             <input 
                 className="loginInput"

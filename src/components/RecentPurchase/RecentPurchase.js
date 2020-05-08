@@ -78,11 +78,10 @@ export default class RecentPurchase extends Component{
 
     determineRender(){
         if(this.state.renderEmpty === false){
-            return <div>
-                  <h4>Date: {this.state.mostRecentPurchase.date}</h4>
-                  <p>Amount: ${this.state.mostRecentPurchase.amount}</p>
-                  <p>Category: {this.state.mostRecentPurchase.category}</p>
-                  <p>Made By: {this.state.mostRecentPurchase.name}</p>
+            return <div className="recPurchRender">
+                  <p className="purchaseData"><span id="purchaseAmount">${this.state.mostRecentPurchase.amount}</span></p>
+                  <p className="purchaseData"><span id="purchaseCategory">{this.state.mostRecentPurchase.category}</span></p>
+                  <p className="purchaseData"><span id="purchaseDate">({this.state.mostRecentPurchase.date})</span><span id="purchaseUser">{this.state.mostRecentPurchase.name}</span></p>
                   </div>
         }
         else{

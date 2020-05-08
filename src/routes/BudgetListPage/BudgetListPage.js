@@ -5,10 +5,15 @@ import RecentPurchase from '../../components/RecentPurchase/RecentPurchase'
 import { Link } from 'react-router-dom'
 import TokenService from '../../services/token-service'
 import config from '../../config'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import Header from '../../components/Header/Header'
+import { Redirect } from 'react-router-dom'
+import LogoutButton from '../../components/LogoutButton/LogoutButton'
 
 export default class BudgetListPage extends Component{
     state = {
-    
+        
         budgets: [],
         purchases: [],
         error: null,
@@ -40,12 +45,18 @@ export default class BudgetListPage extends Component{
         })
     }
 
+   
+
     renderBudgetList(budgets){
         const { error } = this.state
+        if(this.state.budgets.length === 0){
+            return <h2 id="noBudget" >No Budgets Found</h2>
+           
+        }
         if(error !== null){
-            return <div role='alert' id="budgetError">
-                {error && <p className='red'>{error}</p>}
-            </div>
+            return <div className="pageError" role='alert'>
+                        {error && <p className="error">{error}</p>}
+                    </div>
         }
         else{
         const Budgets = budgets
@@ -59,7 +70,7 @@ export default class BudgetListPage extends Component{
                     remaining={Math.round((budget.budget_limit - budget.purchase_total) * 100)/100}
                     budget_id={budget.id}
                 />
-                <h3>Most Recent Purchase: </h3>
+                <h3 className="mostRecentPurchase">Most Recent Purchase: </h3>
                 <RecentPurchase 
                     budget_id={budget.id}
                 />
@@ -69,13 +80,19 @@ export default class BudgetListPage extends Component{
             )}
     }
     render(){
+        const { error } = this.state
+        
         return(
             <div>
                 <div className="addBudget">
-        
+                    <div className="budgetHead">
+                    
+                    </div>
+                    <LogoutButton/>
                     <Link to={{pathname: "/budgets/add", state: {user_name: this.state.user_name}}}>
-                    <button className="newBudget">New Budget</button>
+                    <button className="newBudget"><FontAwesomeIcon className="plus" icon={faPlus}/>New Budget</button>
                     </Link>
+                    
                 </div>
                 {this.renderBudgetList(this.state.budgets)}
             </div>

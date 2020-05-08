@@ -4,6 +4,7 @@ import { format } from 'date-fns'
 import config from '../../config'
 import TokenService from '../../services/token-service'
 import history from '../../history'
+import { Link } from 'react-router-dom'
 
 export default class PurchaseForm extends Component{
     
@@ -45,6 +46,7 @@ export default class PurchaseForm extends Component{
     }
     
     render(){
+        const { error } = this.state
         return(
             <div>
                <form 
@@ -53,6 +55,9 @@ export default class PurchaseForm extends Component{
             >
             <fieldset className="loginField">
             <h2 className="regHeader">Add Purchase</h2>
+            <div role='alert'>
+                {error && <p className="error">{error}</p>}
+            </div>
             <input 
                 className="loginInput"
                 type="text"
@@ -81,7 +86,7 @@ export default class PurchaseForm extends Component{
             <button className="loginButton" type="submit">
                 Submit
             </button>
-            
+            <Link id="purchaseBack" className='regLink' to='/budgets'>Back to Budgets</Link>
             </fieldset>
             </form> 
             </div>

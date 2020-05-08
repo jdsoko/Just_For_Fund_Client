@@ -7,7 +7,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    border-top: 15px solid rgb(99, 170, 78);
+    padding-bottom: 10px;
 }
 
 .noPurchase{
@@ -15,3 +18,102 @@
     padding-top: 30px;
     height: 140px;
 }
+
+#purchaseHead{
+    color: rgb(99, 170, 78);
+    
+}
+
+.purchaseData{
+    padding-top: 6px;
+    height: 40px;
+    background-color: rgb(226, 226, 226);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#purchaseDate{
+    font-style: italic;
+    margin-right: 20px;
+    
+}
+
+#purchaseCategory{
+    font-size: 14pt;
+    
+}
+
+#purchaseAmount{
+    font-size: 15pt;
+    
+}
+
+#purchaseUser{
+   margin-left: 20px;
+}
+
+@media only screen and (max-width: 725px){
+    .recentPurchase{
+        width: 99%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .recentPurchase{
+        width: 100%;
+       
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    #purchaseDate{
+        font-size: 10pt;
+        margin-right: 5px;
+    }
+    #purchaseUser{
+        font-size: 10pt;
+    }
+    #purchaseAmount{
+        font-size: 13pt;
+    }
+    #purchaseCategory{
+        font-size: 13pt;
+    }
+    .purchaseData{
+        padding-top: 3px;
+        height: 30px;
+        width: 60%;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    .noPurchase{
+        font-size: 11pt;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+   
+    
+    #purchaseAmount{
+        font-size: 10pt;
+    }
+    #purchaseCategory{
+        font-size: 10pt;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 340px){
+    #purchaseDate{
+        font-size: 8pt;
+        margin-right: 5px;
+    }
+    #purchaseUser{
+        font-size: 8pt;
+    }
+}
+

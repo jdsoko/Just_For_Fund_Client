@@ -7,5 +7,22 @@
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    border-top: 15px solid rgb(99, 170, 78);
+    padding-bottom: 10px;
+    color: rgb(105,104,104);
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 725px){
+    .purchaseItem{
+        width: 99%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .purchaseItem{
+        width: 100%;
+    }
 }
