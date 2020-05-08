@@ -10,8 +10,8 @@ export default class LoginPage extends Component{
         return(
             <div>
                <LoginForm /> 
-                {/*<p className="demoInfo">(Demo app with username 'demo-user' and password 'Pass123!')
-                </p>*/}
+                <p className="demoInfo">(Demo app with username 'demo-user' and password 'Pass123!')
+                </p>
             </div>
         )
     }

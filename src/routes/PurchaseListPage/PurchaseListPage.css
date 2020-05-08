@@ -16,6 +16,7 @@
 }
 
 .select{
+    -webkit-appearance: none;
     width: 160px;
     border: none;
     color: rgb(241, 241, 241);
