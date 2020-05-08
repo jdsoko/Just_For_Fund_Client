@@ -1,4 +1,4 @@
-# **GameReview**
+# **Ju$t for Fund**
 *This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
 
 #### Live App: https://just-for-fund.now.sh/
