@@ -30,10 +30,10 @@ Builds the app for production to the build folder.
 ### Landing Screen/Log-in Page
 ![Screen shot of login page](https://i.ibb.co/nmHjHb3/just-for-fund-screenshot-3.png)
 
-### Game List Page
+### Budgets Page
 ![Screen shot of budget list page](https://i.ibb.co/HYC56W8/just-for-fund-screenshot-2.png)
 
-### Review Page
+### Purchases Page
 ![Screen shot of purchase history page](https://i.ibb.co/mzsrQsg/just-for-fund-screenshot.png)
 
 
